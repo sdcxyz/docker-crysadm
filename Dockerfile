@@ -12,7 +12,7 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #RUN ntpdate  ntp1.aliyun.com
 
 #更新，安装git，wget，sudo
-RUN  sed -i s@/archive.ubuntu.com/@/mirrors.163.com/@g /etc/apt/sources.list
+#RUN  sed -i s@/archive.ubuntu.com/@/mirrors.163.com/@g /etc/apt/sources.list
 
 RUN apt-get clean && apt-get update && apt-get install -y git wget sudo vim nginx curl
 
